@@ -1,0 +1,34 @@
+#Question 1
+#Student Name: Conor Keane
+
+#Part A
+taylorSwiftSongs = ["Love Story", "Shake It Off", "Delicate", "Wildest Dreams", "All Too Well", "Blank Space", "Bad Blood", "You Belong with Me", "Red", "22"]
+print (taylorSwiftSongs)
+
+#Part B line 9
+#Part C lines 12 to 17
+option = input ("Please enter the song you're looking for: ")
+
+if option in taylorSwiftSongs:
+    print ("The song" ,option, "is in the list at positon" ,taylorSwiftSongs.index (option), "out of 10 songs")
+    
+
+else:
+    print ("Sorry, the song" ,option, "is not in Taylor Swift's song list")
+
+
+
+
+#Question 2
+#Student Name: Conor Keane
+
+temperature = int (input ("Welcome to Temperature Alert System, please enter a number in degrees celcius: "))
+
+if temperature <20:
+    print ("Too cold. Turn up the heat")
+
+elif temperature <= 24:
+    print ("Just right")
+
+else:
+    print: ("Too hot. Turn down the heating")
