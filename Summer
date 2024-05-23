@@ -1,0 +1,40 @@
+#Question 1
+#Student Name: Conor Keane
+
+print("Welcome to the drivers lisence eligibility checker.")
+name = input("What is your name?   ")
+age=int(input("What age are you?   ")) #The user will enter their age using int(input. (ii)
+
+
+print("You entered " ,age)
+
+if (age  <=74 >= 17  ):
+    print( name, " You are entitled to apply for a driving licence.")
+    
+elif (age >= 75 ):
+    print( name, " You are entitled to apply for a three year driving licence.")
+    
+else:
+    print( name, " You are not entitled to apply for a driving licence")
+
+
+
+
+#Question 2
+#Student Name: Conor Keane
+
+import random
+gameNumber = random.randint(1, 51)
+userGuess = int(input("Please guess a number between 1 and 50, good luck!   "))
+
+while userGuess != gameNumber:
+    if (userGuess > gameNumber):
+        print("Guess a little lower")
+    elif (userGuess < gameNumber):
+        print("Guess a little higher")
+    else:
+        print("You have won!")
+    userGuess = int(input("Please guess a number between 1 and 50, good luck!  "))
+
+if gameNumber == userGuess:
+    print("You have won!")
